@@ -43,13 +43,16 @@ class Rectangle extends Figure {
 public class Main {
 
     public static void main(String[] args) {
+        // define super and subclass instances
         Figure f = new Figure(3, 4);
         Rectangle r = new Rectangle(2,8);
         Triangle t = new Triangle(2, 1);
 
+        // check functioning of area method
         System.out.println("Area of figure is " + f.area());
         System.out.println("Area of rectangle is" + r.area());
 
+        // check polymorphism 
         f = r;
         System.out.println("area method called on figure which references rectangle subclass " + f.area());
 
