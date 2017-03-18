@@ -1,6 +1,6 @@
 package com.company;
 
-class Figure {
+abstract class Figure {
     protected double dimA;
     protected double dimB;
 
@@ -9,9 +9,7 @@ class Figure {
         dimB = b;
     }
 
-    double area() {
-        return 0;
-    }
+    abstract double area();
 }
 
 class Triangle extends Figure {
@@ -52,7 +50,7 @@ public class Main {
         System.out.println("Area of figure is " + f.area());
         System.out.println("Area of rectangle is" + r.area());
 
-        // check polymorphism 
+        // check polymorphism
         f = r;
         System.out.println("area method called on figure which references rectangle subclass " + f.area());
 
