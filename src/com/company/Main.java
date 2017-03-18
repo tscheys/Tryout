@@ -53,12 +53,36 @@ class Box {
     }
  }
 
+class BoxColor extends Box{
+    private String color;
+
+    BoxColor() {
+        super();
+        color = "transparent";
+    }
+
+    BoxColor(String col) {
+        color = col;
+    }
+
+}
+
+class BoxTexture extends BoxColor{
+    private String texture;
+
+    BoxTexture() {
+        super();
+        texture = "default";
+
+    }
+}
+
 public class Main {
 
     public static void main(String[] args) {
         Box b1 = new Box();
         Boxweight b2 = new Boxweight();
-        b2 = b1;
+        //b2 = b1;
         // b1 = b2;
 
 
