@@ -33,9 +33,33 @@ class Box {
 
  }
 
+ class Boxweight extends Box {
+    private double weight;
+
+    Boxweight(Boxweight ob) {
+        // make copy of Boxweight object
+        super(ob);
+        weight = ob.weight;
+
+    }
+
+    Boxweight(double w, double l, double d, double m) {
+        super(w, l, d);
+        weight = m;
+    }
+
+    Boxweight() {
+        super();
+    }
+ }
+
 public class Main {
 
     public static void main(String[] args) {
+        Box b1 = new Box();
+        Boxweight b2 = new Boxweight();
+        b2 = b1;
+        // b1 = b2;
 
 
     }
