@@ -111,6 +111,10 @@ public class Main {
 
     public static void main(String[] args) {
 
+        B b = new B();
+        int dd = b.c;
+
+
         // try out this shit
         int a = 5;
         Factorial f = new Factorial();
