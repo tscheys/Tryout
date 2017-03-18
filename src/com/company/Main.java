@@ -8,6 +8,10 @@ class A {
     int d = 3; // accessible only to itself and its package
 }
 
+class B extends A {
+    public int a = 5;
+}
+
 class Factorial {
 
     private int test = 3;
