@@ -105,6 +105,10 @@ class A {
 
 class B extends A {
     public int a = 5;
+
+    void showNumbersOfA() {
+        System.out.println(a + c + b + d);
+    }
 }
 
 public class Main {
@@ -113,6 +117,7 @@ public class Main {
 
         B b = new B();
         int dd = b.c;
+        b.showNumbersOfA();
 
 
         // try out this shit
