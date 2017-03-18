@@ -103,8 +103,16 @@ class A {
     int d = 3; // accessible only to itself and its package
 }
 
-class B extends A {
-    public int a = 5;
+final class B extends A {
+    public int cc = 5;
+
+    void showAllNumbers() {
+        System.out.println(a + c + b);
+    }
+}
+
+class C extends B {
+
 }
 
 public class Main {
