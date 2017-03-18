@@ -1,5 +1,13 @@
 package com.company;
 
+// add inheritance tryout code
+class A {
+    private int a = 5; // only accessible to class A, noting else
+    protected int c = 3; // accessible to itself, subclasses and the package
+    public int b = 4; // accessible to itself, subclasses, the package and the world
+    int d = 3; // accessible only to itself and its package
+}
+
 class Factorial {
 
     private int test = 3;
