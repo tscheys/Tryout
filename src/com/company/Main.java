@@ -5,11 +5,10 @@ import java.lang.*;
 public class Main {
 
     public static void main(String[] args) {
-        NewThread t1 = new NewThread("t1");
-        NewThread t2 = new NewThread("t2");
-        NewThread t3 = new NewThread("t3");
-
-
+        CallMe c1 = new CallMe();
+        NewThread t1 = new NewThread(c1, "Hello");
+        NewThread t2 = new NewThread(c1, "Synchronized");
+        NewThread t3 = new NewThread(c1, "World");
     }
 }
 
